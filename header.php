@@ -11,6 +11,20 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Favicon and Feed -->
+<link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
+
+<!--  iPhone Web App Home Screen Icon -->
+<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/img/devices/_s-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/img/devices/_s-icon-retina.png" />
+<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/devices/_s-icon.png" />
+
+<!-- Enable Startup Image for iOS Home Screen Web App -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/mobile-load.png" />
+
 <meta name="keywords" content="" />
 <meta name="author" content="TPD Design House">
 <!-- <link rel=”author” href=”https://plus.google.com/[YOUR PERSONAL G+ PROFILE HERE]“/> -->

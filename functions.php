@@ -15,6 +15,9 @@ if ( ! function_exists( '_s_setup' ) ) :
  */
 function _s_setup() {
 
+	// launching operation cleanup
+	 add_action('init', '_s_head_cleanup');
+
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
@@ -72,6 +75,7 @@ function _s_scripts() {
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
+require get_template_directory() . '/inc/clean_wp_head.php';
 require get_template_directory() . '/inc/cleanPostImgs.php';
 /**
  * Custom template tags for this theme.
