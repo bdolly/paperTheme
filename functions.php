@@ -72,7 +72,7 @@ function _s_scripts() {
 		// modernizr (without media query polyfill)
 		// wp_register_script( '_s-modernizr', get_stylesheet_directory_uri() . '/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
-		// register main stylesheet
+		// register main stylesheet from css
 		wp_register_style( '_s-stylesheet', get_stylesheet_directory_uri() . '/css/style.css', array(), '', 'all' );
 
 		// ie-only style sheet
@@ -106,10 +106,12 @@ add_action( 'wp_enqueue_scripts', '_s_scripts' );
  * Clean-up wp_head() garbage
  */
 require get_template_directory() . '/inc/clean_wp_head.php';
+
 /**
  * Clean images inserted into post
  */
 require get_template_directory() . '/inc/cleanPostImgs.php';
+
 /**
  * Custom template tags for this theme.
  */

@@ -27,7 +27,7 @@ the whole project.
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 23, ../scss/partials/_normalize.scss */
+/* line 12, ../scss/partials/_normalize.scss */
 article,
 aside,
 details,
@@ -46,7 +46,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 33, ../scss/partials/_normalize.scss */
+/* line 31, ../scss/partials/_normalize.scss */
 audio,
 canvas,
 video {
@@ -67,7 +67,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
-/* line 53, ../scss/partials/_normalize.scss */
+/* line 52, ../scss/partials/_normalize.scss */
 [hidden],
 template {
   display: none;
@@ -121,7 +121,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 106, ../scss/partials/_normalize.scss */
+/* line 105, ../scss/partials/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -151,7 +151,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 138, ../scss/partials/_normalize.scss */
+/* line 136, ../scss/partials/_normalize.scss */
 b,
 strong,
 .strong {
@@ -161,7 +161,7 @@ strong,
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 148, ../scss/partials/_normalize.scss */
+/* line 146, ../scss/partials/_normalize.scss */
 dfn,
 em,
 .em {
@@ -200,7 +200,7 @@ pre {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 188, ../scss/partials/_normalize.scss */
+/* line 185, ../scss/partials/_normalize.scss */
 code,
 kbd,
 pre,
@@ -228,7 +228,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 213, ../scss/partials/_normalize.scss */
+/* line 212, ../scss/partials/_normalize.scss */
 q:before,
 q:after {
   content: '';
@@ -243,7 +243,7 @@ small, .small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 227, ../scss/partials/_normalize.scss */
+/* line 226, ../scss/partials/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -268,7 +268,7 @@ sub {
 /*
  * Addresses margins set differently in IE6/7.
  */
-/* line 253, ../scss/partials/_normalize.scss */
+/* line 250, ../scss/partials/_normalize.scss */
 dl,
 menu,
 ol,
@@ -289,7 +289,7 @@ menu {
   padding: 0 0 0 40px;
 }
 
-/* line 270, ../scss/partials/_normalize.scss */
+/* line 269, ../scss/partials/_normalize.scss */
 ol,
 ul {
   padding: 0;
@@ -299,7 +299,7 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE7.
  */
-/* line 280, ../scss/partials/_normalize.scss */
+/* line 279, ../scss/partials/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -366,7 +366,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 350, ../scss/partials/_normalize.scss */
+/* line 347, ../scss/partials/_normalize.scss */
 button,
 input,
 select,
@@ -383,7 +383,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 362, ../scss/partials/_normalize.scss */
+/* line 361, ../scss/partials/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -395,7 +395,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 374, ../scss/partials/_normalize.scss */
+/* line 373, ../scss/partials/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -408,7 +408,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 389, ../scss/partials/_normalize.scss */
+/* line 386, ../scss/partials/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -422,7 +422,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 399, ../scss/partials/_normalize.scss */
+/* line 398, ../scss/partials/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -432,7 +432,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 409, ../scss/partials/_normalize.scss */
+/* line 408, ../scss/partials/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -460,7 +460,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 433, ../scss/partials/_normalize.scss */
+/* line 432, ../scss/partials/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -469,7 +469,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 442, ../scss/partials/_normalize.scss */
+/* line 441, ../scss/partials/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -507,7 +507,7 @@ table {
   box-sizing: border-box;
 }
 
-/* line 480, ../scss/partials/_normalize.scss */
+/* line 479, ../scss/partials/_normalize.scss */
 .image-replacement,
 .ir {
   text-indent: 100%;
@@ -727,307 +727,35 @@ I've seperated the grid so you can swap it out easily. It's
 called at the top the style.scss stylesheet.
 
 There are a ton of grid solutions out there. You should definitely
-experiment with your own. Here are some recommendations:
+experiment with your own. Here is our favorite thus far. 
 
-http://gridsetapp.com - Love this site. Responsive Grids made easy.
 http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-http://gridpak.com/ - Create your own responsive grid.
-https://github.com/dope/lemonade - Neat lightweight grid.
+
+Be sure your dev. environment has the susy gem installed first 
+"gem install susy"
 
 
-The grid below is a custom built thingy I modeled a bit after
-Gridset. It's VERY basic and probably shouldn't be used on
-your client projects. The idea is you learn how to roll your
-own grids. It's better in the long run and allows you full control
-over your project's layout.
+The basic Susy layout is composed using two simple mixins:
+establish a layout context
+@include container;
+
+lay out your elements
+@include span(<width>); 
 
 ******************************************************************/
-/* line 35, ../scss/partials/_grid.scss */
-.last-col {
-  float: right;
-  padding-right: 0;
+/* line 29, ../scss/partials/_grid.scss */
+body {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
-/*
-Mobile Grid Styles
-These are the widths for the mobile grid.
-There are four types, but you can add or customize
-them however you see fit.
-*/
-@media (max-width: 767px) {
-  /* line 49, ../scss/partials/_grid.scss */
-  .m-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0;
-  }
-
-  /* line 55, ../scss/partials/_grid.scss */
-  .m-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%;
-  }
-
-  /* line 60, ../scss/partials/_grid.scss */
-  .m-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%;
-  }
-
-  /* line 65, ../scss/partials/_grid.scss */
-  .m-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%;
-  }
-
-  /* line 70, ../scss/partials/_grid.scss */
-  .m-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%;
-  }
-
-  /* line 75, ../scss/partials/_grid.scss */
-  .m-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%;
-  }
-}
-/* Portrait tablet to landscape */
-@media (min-width: 768px) and (max-width: 1029px) {
-  /* line 86, ../scss/partials/_grid.scss */
-  .t-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0;
-  }
-
-  /* line 92, ../scss/partials/_grid.scss */
-  .t-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%;
-  }
-
-  /* line 97, ../scss/partials/_grid.scss */
-  .t-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%;
-  }
-
-  /* line 102, ../scss/partials/_grid.scss */
-  .t-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%;
-  }
-
-  /* line 107, ../scss/partials/_grid.scss */
-  .t-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%;
-  }
-
-  /* line 112, ../scss/partials/_grid.scss */
-  .t-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%;
-  }
-
-  /* line 117, ../scss/partials/_grid.scss */
-  .t-1of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 20%;
-  }
-
-  /* line 122, ../scss/partials/_grid.scss */
-  .t-2of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 40%;
-  }
-
-  /* line 127, ../scss/partials/_grid.scss */
-  .t-3of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 60%;
-  }
-
-  /* line 132, ../scss/partials/_grid.scss */
-  .t-4of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 80%;
-  }
-}
-/* Landscape to small desktop */
-@media (min-width: 1030px) {
-  /* line 142, ../scss/partials/_grid.scss */
-  .d-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0;
-  }
-
-  /* line 148, ../scss/partials/_grid.scss */
-  .d-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%;
-  }
-
-  /* line 153, ../scss/partials/_grid.scss */
-  .d-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%;
-  }
-
-  /* line 158, ../scss/partials/_grid.scss */
-  .d-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%;
-  }
-
-  /* line 163, ../scss/partials/_grid.scss */
-  .d-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%;
-  }
-
-  /* line 168, ../scss/partials/_grid.scss */
-  .d-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%;
-  }
-
-  /* line 173, ../scss/partials/_grid.scss */
-  .d-1of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 20%;
-  }
-
-  /* line 178, ../scss/partials/_grid.scss */
-  .d-2of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 40%;
-  }
-
-  /* line 183, ../scss/partials/_grid.scss */
-  .d-3of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 60%;
-  }
-
-  /* line 188, ../scss/partials/_grid.scss */
-  .d-4of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 80%;
-  }
-
-  /* line 193, ../scss/partials/_grid.scss */
-  .d-1of6 {
-    float: left;
-    padding-right: 0.75em;
-    width: 16.6666666667%;
-  }
-
-  /* line 198, ../scss/partials/_grid.scss */
-  .d-1of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 14.2857142857%;
-  }
-
-  /* line 203, ../scss/partials/_grid.scss */
-  .d-2of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 28.5714286%;
-  }
-
-  /* line 208, ../scss/partials/_grid.scss */
-  .d-3of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 42.8571429%;
-  }
-
-  /* line 213, ../scss/partials/_grid.scss */
-  .d-4of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 57.1428572%;
-  }
-
-  /* line 218, ../scss/partials/_grid.scss */
-  .d-5of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 71.4285715%;
-  }
-
-  /* line 223, ../scss/partials/_grid.scss */
-  .d-6of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 85.7142857%;
-  }
-
-  /* line 228, ../scss/partials/_grid.scss */
-  .d-1of8 {
-    float: left;
-    padding-right: 0.75em;
-    width: 12.5%;
-  }
-
-  /* line 233, ../scss/partials/_grid.scss */
-  .d-1of9 {
-    float: left;
-    padding-right: 0.75em;
-    width: 11.1111111111%;
-  }
-
-  /* line 238, ../scss/partials/_grid.scss */
-  .d-1of10 {
-    float: left;
-    padding-right: 0.75em;
-    width: 10%;
-  }
-
-  /* line 243, ../scss/partials/_grid.scss */
-  .d-1of11 {
-    float: left;
-    padding-right: 0.75em;
-    width: 9.09090909091%;
-  }
-
-  /* line 248, ../scss/partials/_grid.scss */
-  .d-1of12 {
-    float: left;
-    padding-right: 0.75em;
-    width: 8.33%;
-  }
-}
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
@@ -1137,7 +865,7 @@ and it will create a button dependant on those variables.
 .blue-btn, .comment-reply-link, #submit {
   background-color: #2980b9;
 }
-/* line 66, ../scss/modules/_buttons.scss */
+/* line 65, ../scss/modules/_buttons.scss */
 .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
   background-color: #2574a8;
 }
@@ -1166,7 +894,7 @@ http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
 /*********************
 INPUTS
 *********************/
-/* line 40, ../scss/modules/_forms.scss */
+/* line 24, ../scss/modules/_forms.scss */
 input[type="text"],
 input[type="password"],
 input[type="datetime"],
@@ -1202,7 +930,7 @@ textarea,
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
 }
-/* line 60, ../scss/modules/_forms.scss */
+/* line 59, ../scss/modules/_forms.scss */
 input[type="text"]:focus, input[type="text"]:active,
 input[type="password"]:focus,
 input[type="password"]:active,
@@ -1238,7 +966,7 @@ textarea:active,
 .field:active {
   background-color: #f7f8fa;
 }
-/* line 66, ../scss/modules/_forms.scss */
+/* line 65, ../scss/modules/_forms.scss */
 input[type="text"].error, input[type="text"].is-invalid,
 input[type="password"].error,
 input[type="password"].is-invalid,
@@ -1280,7 +1008,7 @@ textarea.is-invalid,
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
   outline-color: #fbe3e4;
 }
-/* line 78, ../scss/modules/_forms.scss */
+/* line 77, ../scss/modules/_forms.scss */
 input[type="text"].success, input[type="text"].is-valid,
 input[type="password"].success,
 input[type="password"].is-valid,
@@ -1322,7 +1050,7 @@ textarea.is-valid,
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
   outline-color: #e6efc2;
 }
-/* line 90, ../scss/modules/_forms.scss */
+/* line 89, ../scss/modules/_forms.scss */
 input[type="text"][disabled], input[type="text"].is-disabled,
 input[type="password"][disabled],
 input[type="password"].is-disabled,
@@ -1360,7 +1088,7 @@ textarea.is-disabled,
   border-color: #cfcfcf;
   opacity: 0.6;
 }
-/* line 96, ../scss/modules/_forms.scss */
+/* line 95, ../scss/modules/_forms.scss */
 input[type="text"][disabled]:focus, input[type="text"][disabled]:active, input[type="text"].is-disabled:focus, input[type="text"].is-disabled:active,
 input[type="password"][disabled]:focus,
 input[type="password"][disabled]:active,
@@ -1694,7 +1422,7 @@ POSTS & CONTENT STYLES
 }
 
 /* end .hentry */
-/* line 281, ../scss/breakpoints/_base.scss */
+/* line 279, ../scss/breakpoints/_base.scss */
 .single-title,
 .page-title,
 .entry-title {
@@ -1795,7 +1523,7 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
 }
-/* line 424, ../scss/breakpoints/_base.scss */
+/* line 420, ../scss/breakpoints/_base.scss */
 .entry-content .size-auto,
 .entry-content .size-full,
 .entry-content .size-large,
@@ -1847,7 +1575,7 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 495, ../scss/breakpoints/_base.scss */
+/* line 494, ../scss/breakpoints/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.5em 0;
@@ -2310,7 +2038,7 @@ you can add resource intensive styles.
     color: white;
     text-decoration: underline;
   }
-  /* line 71, ../scss/breakpoints/_768up.scss */
+  /* line 70, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -2540,7 +2268,7 @@ be set to display none.
     content: " (" attr(title) ")";
   }
 
-  /* line 38, ../scss/partials/_print.scss */
+  /* line 36, ../scss/partials/_print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
@@ -2570,21 +2298,20 @@ be set to display none.
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   /* line 63, ../scss/partials/_print.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 69, ../scss/partials/_print.scss */
+  /* line 68, ../scss/partials/_print.scss */
   h2,
   h3 {
     page-break-after: avoid;
   }
 
-  /* line 78, ../scss/partials/_print.scss */
+  /* line 74, ../scss/partials/_print.scss */
   .sidebar,
   .page-navigation,
   .wp-prev-next,
