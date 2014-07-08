@@ -38,12 +38,6 @@ function _s_setup() {
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 	) );
 
-	/*
-	 * Enable support for Post Formats.
-	 * See http://codex.wordpress.org/Post_Formats
-	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link') );
-
 	
 }
 endif; // _s_setup
@@ -75,7 +69,13 @@ function _s_scripts() {
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
+/**
+ * Clean-up wp_head() garbage
+ */
 require get_template_directory() . '/inc/clean_wp_head.php';
+/**
+ * Clean images inserted into post
+ */
 require get_template_directory() . '/inc/cleanPostImgs.php';
 /**
  * Custom template tags for this theme.
