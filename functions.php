@@ -20,7 +20,7 @@ function _s_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -39,9 +39,8 @@ function _s_setup() {
 	 * Enable support for Post Formats.
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
-	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link'
-	) );
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link') );
+
 	
 }
 endif; // _s_setup
@@ -73,7 +72,7 @@ function _s_scripts() {
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
-
+require get_template_directory() . '/inc/cleanPostImgs.php';
 /**
  * Custom template tags for this theme.
  */
