@@ -69,8 +69,8 @@ node_modules
 #     wp-content, except plugins and themes   #
 #=============================================#
 wp-content/*
-!wp-content/plugins/
-!wp-content/mu-plugins/
+wp-content/plugins/
+wp-content/mu-plugins/
 !wp-content/themes/
 # !wp-content/uploads ##=> It's a good idea to ignore uploads, especially if you are using git to deploy to live/dev environments. Un-comment this line to 'watch' uploads
 
@@ -88,7 +88,7 @@ wp-content/*
 #     Specific Themes       #
 #===========================#
 # wp-content/themes/*
-wp-content/themes/twentyfourteen
+wp-content/themes/twentyfourteenres
 !wp-content/themes/BaseTheme
 
 
