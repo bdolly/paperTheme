@@ -91,9 +91,9 @@ wp-content/mu-plugins/
 #     Specific Themes       #
 #===========================#
 wp-content/themes/*
-wp-content/themes/twentyfourtenn
-wp-content/themes/paperTheme
-wp-content/themes/paperTheme/.tmp
+!wp-content/themes/twentyfifteen
+!wp-content/themes/paperTheme
+!wp-content/themes/paperTheme/.tmp
 
 
 
