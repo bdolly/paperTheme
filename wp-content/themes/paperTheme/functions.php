@@ -70,36 +70,36 @@ function _paperTheme_scripts() {
   if (!is_admin()) {
 
 		// modernizr (without media query polyfill)
-		wp_register_script( '_s-modernizr', get_stylesheet_directory_uri() . '/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+		wp_register_script( '_paperTheme-modernizr', get_stylesheet_directory_uri() . '/js/libs/modernizr.custom.js', array(), '2.5.3', false );
 
 		// register main stylesheet from css
-		wp_register_style( '_s-stylesheet', get_stylesheet_directory_uri() . '/css/style.css', array(), '', 'all' );
+		wp_register_style( '_paperTheme-stylesheet', get_stylesheet_directory_uri() . '/css/style.css', array(), '', 'all' );
 
 		// ie-only style sheet
-		wp_register_style( '_s-ie-only', get_stylesheet_directory_uri() . '/css/ie.css', array(), '' );
+		wp_register_style( '_paperTheme-ie-only', get_stylesheet_directory_uri() . '/css/ie.css', array(), '' );
 
 		//adding scripts file in the footer
-		wp_register_script( '_s-custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array( 'jquery' ), '', true );
+		wp_register_script( '_paperTheme-custom-js', get_stylesheet_directory_uri() . '/js/_paperTheme.js', array( 'jquery' ), '', true );
 
 		// enqueue styles and scripts
-		wp_enqueue_script( '_s-modernizr' );
-		wp_enqueue_style( '_s-stylesheet' );
-		wp_enqueue_style( '_s-ie-only' );
+		wp_enqueue_script( '_paperTheme-modernizr' );
+		wp_enqueue_style( '_paperTheme-stylesheet' );
+		wp_enqueue_style( '_paperTheme-ie-only' );
 
-		$wp_styles->add_data( '_s-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
+		$wp_styles->add_data( '_paperTheme-ie-only', 'conditional', 'lt IE 9 | IE 9' ); // add conditional wrapper around ie stylesheet
 
 		// enque JQuery from google CDN and add to footer 
 		wp_deregister_script('jquery');
-		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"), false, '1.11.1', true);
+		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"), true, '1.11.1', true);
 		wp_enqueue_script('jquery');
 		
 
 		// enqueue custom.js after Jquery in the footer
-		// wp_enqueue_script( '_s-custom-js' );
+		wp_enqueue_script( '_paperTheme-custom-js' );
 
 	}
 
-	// wp_enqueue_style( '_s-style', get_stylesheet_uri() );
+	// wp_enqueue_style( '_s-style', get_stylesheeturi() );
 }
 add_action( 'wp_enqueue_scripts', '_paperTheme_scripts' );
 

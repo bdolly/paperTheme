@@ -17,13 +17,13 @@
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 
 <!--  iPhone Web App Home Screen Icon -->
-<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/img/devices/_s-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/img/devices/_s-icon-retina.png" />
-<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/devices/_s-icon.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/img/devices/_paperTheme-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/img/devices/_paperTheme-icon-retina.png" />
+<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/devices/_paperTheme-icon.png" />
 
 <!-- Enable Startup Image for iOS Home Screen Web App -->
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/mobile-load.png" />
+<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/_paperTheme-mobile-load.png" />
 
 <meta name="keywords" content="" />
 <meta name="author" content="TPD Design House">
@@ -43,9 +43,9 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<!-- TODO: make h1 #site-logo -->
-			<!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
+			
+			<h1 id="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> 
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
