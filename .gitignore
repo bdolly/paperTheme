@@ -41,6 +41,7 @@ ehthumbs.db
 error_log
 access_log
 .sass-cache
+!.htaccess
 
 
 #===================================#
