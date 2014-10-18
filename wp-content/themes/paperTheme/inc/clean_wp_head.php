@@ -1,6 +1,6 @@
 <?php
 /**
- * @package _s
+ * @package _paperTheme
  */
 
 /**********************
@@ -12,8 +12,8 @@ Thanks for Bones
 http://themble.com/bones/
 **********************/
 
-if( ! function_exists( '_s_head_cleanup ' ) ) {
-	function _s_head_cleanup() {
+if( ! function_exists( '_paperTheme_head_cleanup ' ) ) {
+	function _paperTheme_head_cleanup() {
 		// category feeds
 		// remove_action( 'wp_head', 'feed_links_extra', 3 );
 		// post and comment feeds
@@ -33,21 +33,21 @@ if( ! function_exists( '_s_head_cleanup ' ) ) {
 		// WP version
 		remove_action( 'wp_head', 'wp_generator' );
 	  // remove WP version from css
-	  add_filter( 'style_loader_src', '_s_remove_wp_ver_css_js', 9999 );
+	  add_filter( 'style_loader_src', '_paperTheme_remove_wp_ver_css_js', 9999 );
 	  // remove Wp version from scripts
-	  add_filter( 'script_loader_src', '_s_remove_wp_ver_css_js', 9999 );
+	  add_filter( 'script_loader_src', '_paperTheme_remove_wp_ver_css_js', 9999 );
 
 	} /* end head cleanup */
 }
 
 // remove WP version from RSS
-if( ! function_exists( '_s_rss_version ' ) ) {
-	function _s_rss_version() { return ''; }
+if( ! function_exists( '_paperTheme_rss_version ' ) ) {
+	function _paperTheme_rss_version() { return ''; }
 }
 
 // remove WP version from scripts
-if( ! function_exists( '_s_remove_wp_ver_css_js ' ) ) {
-	function _s_remove_wp_ver_css_js( $src ) {
+if( ! function_exists( '_paperTheme_remove_wp_ver_css_js ' ) ) {
+	function _paperTheme_remove_wp_ver_css_js( $src ) {
 	    if ( strpos( $src, 'ver=' ) )
 	        $src = remove_query_arg( 'ver', $src );
 	    return $src;
@@ -55,8 +55,8 @@ if( ! function_exists( '_s_remove_wp_ver_css_js ' ) ) {
 }
 
 // remove injected CSS for recent comments widget
-if( ! function_exists( '_s_remove_wp_widget_recent_comments_style ' ) ) {
-	function _s_remove_wp_widget_recent_comments_style() {
+if( ! function_exists( '_paperTheme_remove_wp_widget_recent_comments_style ' ) ) {
+	function _paperTheme_remove_wp_widget_recent_comments_style() {
 	   if ( has_filter('wp_head', 'wp_widget_recent_comments_style') ) {
 	      remove_filter('wp_head', 'wp_widget_recent_comments_style' );
 	   }
@@ -64,8 +64,8 @@ if( ! function_exists( '_s_remove_wp_widget_recent_comments_style ' ) ) {
 }
 
 // remove injected CSS from recent comments widget
-if( ! function_exists( '_s_remove_recent_comments_style ' ) ) {
-	function _s_remove_recent_comments_style() {
+if( ! function_exists( '_paperTheme_remove_recent_comments_style ' ) ) {
+	function _paperTheme_remove_recent_comments_style() {
 	  global $wp_widget_factory;
 	  if (isset($wp_widget_factory->widgets['WP_Widget_Recent_Comments'])) {
 	    remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
@@ -74,8 +74,8 @@ if( ! function_exists( '_s_remove_recent_comments_style ' ) ) {
 }
 
 // remove injected CSS from gallery
-if( ! function_exists( '_s_gallery_style ' ) ) {
-	function _s_gallery_style($css) {
+if( ! function_exists( '_paperTheme_gallery_style ' ) ) {
+	function _paperTheme_gallery_style($css) {
 	  return preg_replace("!<style type='text/css'>(.*?)</style>!s", '', $css);
 	}
 }

@@ -1,11 +1,11 @@
 <?php
 /**
- * _s functions and definitions
+ * _paperTheme functions and definitions
  *
- * @package _s
+ * @package _paperTheme
  */
 
-if ( ! function_exists( '_s_setup' ) ) :
+if ( ! function_exists( '_paperTheme_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -13,10 +13,10 @@ if ( ! function_exists( '_s_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function _s_setup() {
+function _paperTheme_setup() {
 
 	// launching operation cleanup
-	 add_action('init', '_s_head_cleanup');
+	 add_action('init', '_paperTheme_head_cleanup');
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
@@ -27,7 +27,7 @@ function _s_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', '_s' ),
+		'primary' => __( 'Primary Menu', '_paperTheme' ),
 	) );
 	
 	/*
@@ -40,17 +40,17 @@ function _s_setup() {
 
 	
 }
-endif; // _s_setup
-add_action( 'after_setup_theme', '_s_setup' );
+endif; // _paperTheme_setup
+add_action( 'after_setup_theme', '_paperTheme_setup' );
 
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function _s_widgets_init() {
+function _paperTheme_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', '_s' ),
+		'name'          => __( 'Sidebar', '_paperTheme' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -59,12 +59,12 @@ function _s_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
-add_action( 'widgets_init', '_s_widgets_init' );
+add_action( 'widgets_init', '_paperTheme_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function _s_scripts() {
+function _paperTheme_scripts() {
 	global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
 
   if (!is_admin()) {
@@ -101,7 +101,7 @@ function _s_scripts() {
 
 	// wp_enqueue_style( '_s-style', get_stylesheet_uri() );
 }
-add_action( 'wp_enqueue_scripts', '_s_scripts' );
+add_action( 'wp_enqueue_scripts', '_paperTheme_scripts' );
 
 /**
  * Clean-up wp_head() garbage

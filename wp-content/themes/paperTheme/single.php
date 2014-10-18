@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package _s
+ * @package _paperTheme
  */
 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php _s_post_nav(); ?>
+			<?php _paperTheme_post_nav(); ?>
 
 
 		<?php endwhile; // end of the loop. ?>
