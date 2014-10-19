@@ -1,28 +1,22 @@
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com 
+Author: _author_
 
 Stylesheet: Button Styles
 
 Buttons are a pretty important part of your site's style, so it's
 important to have a consistent baseline for them. Use this stylesheet
 to create all kinds of buttons.
-
-Helpful Links:
-http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/
-
 ******************************************************************/
 
-/*********************
+
+
+/* =======================================================================
 BUTTON DEFAULTS
 We're gonna use a placeholder selector here
 so we can use common styles. We then use this
 to load up the defaults in all our buttons.
-
-Here's a quick video to show how it works:
-http://www.youtube.com/watch?v=hwdVpKiJzac
-
-*********************/
+========================================================================== */
 
 %btn {
   display: inline-block;
@@ -30,15 +24,14 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   font-family: $sans-serif;
   text-decoration: none;
   color: $white;
-  font-size: 0.9em;
-  font-size: 34px;
-  line-height: 34px;
+  @include rem(font-size, 3.4);
+  @include rem(line-height, 3.4);
   font-weight: normal;
   padding: 0 24px;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  @include transition(background-color 0.14s ease-in-out);
+  transition: background-color 0.14s ease-in-out;
 
   // hovering on the btn
   &:hover, &:focus {
@@ -47,9 +40,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   } // end hover
 
   // clicking on the button
-  &:active {
-    top: 1px; // adds a tiny hop to the click
-  } // end active
+  &:active { } // end active
 
 } // end .button
 

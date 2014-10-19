@@ -1,13 +1,12 @@
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com 
+Author: _author_
 
 Stylesheet: Mixins Stylesheet
 
 This is where you can take advantage of Sass' great features: Mixins.
-I won't go in-depth on how they work exactly,
-there are a few articles below that will help do that. What I will
-tell you is that this will help speed up simple changes like
+
+This will help speed up simple changes like
 changing a color or adding CSS3 techniques gradients.
 
 A WORD OF WARNING: It's very easy to overdo it here. Be careful and
@@ -20,79 +19,11 @@ http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
 
 ******************************************************************/
 
-
-/*********************
-TRANSITION
-*********************/
-
-/*
-I totally rewrote this to be cleaner and easier to use.f
-You'll need to be using Sass 3.2+ for these to work.
-Thanks to @anthonyshort for the inspiration on these.
-USAGE: @include transition(all 0.2s ease-in-out);
-*/
-
-@mixin transition($transition...) {
-  // defining prefixes so we can use them in mixins below
-  $prefixes:      ("-webkit-", "" );
-  @each $prefix in $prefixes {
-    #{$prefix}transition: $transition;
-  }
-}
-
-/*********************
-Keyframe Animations
-http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
-*********************/
-/*
-USAGE:
- @include keyframes(move-the-object) {
-  0%   { left: 100px; }
-  100% { left: 200px; }
-}
-
-.object-to-animate {
-  @include animation('move-the-object .5s 1', 'move-the-object-again .5s 1 .5s');
-} 
-*/
-@mixin animation($animate...) {
-    $max: length($animate);
-    $animations: '';
-
-    @for $i from 1 through $max {
-        $animations: #{$animations + nth($animate, $i)};
-
-        @if $i < $max {
-            $animations: #{$animations + ", "};
-        }
-    }
-    -webkit-animation: $animations;
-    -moz-animation:    $animations;
-    -o-animation:      $animations;
-    animation:         $animations;
-}
-
-@mixin keyframes($animationName) {
-    @-webkit-keyframes #{$animationName} {
-        @content;
-    }
-    @-moz-keyframes #{$animationName} {
-        @content;
-    }
-    @-o-keyframes #{$animationName} {
-        @content;
-    }
-    @keyframes #{$animationName} {
-        @content;
-    }
-}
-
-/*********************
+/* =======================================================================
 CSS3 GRADIENTS
 Be careful with these since they can
-really slow down your CSS. Don't overdo it.
-*********************/
-
+really slow down your CSS. Don't overdo it.   
+========================================================================== */
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
 @mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
 	background-color: $to;
@@ -103,19 +34,6 @@ really slow down your CSS. Don't overdo it.
 	background-image: linear-gradient(to bottom, $from, $to);
 }
 
-/*********************
-BOX SIZING
-*********************/
-
-/* @include box-sizing(border-box); */
-/* NOTE: value of "padding-box" is only supported in Gecko. So
-probably best not to use it. I mean, were you going to anyway? */
-@mixin box-sizing($type: border-box) {
-	-webkit-box-sizing: $type;
-	-moz-box-sizing:    $type;
-	-ms-box-sizing:     $type;
-	box-sizing:         $type;
-}
 
 
 /* =======================================================================

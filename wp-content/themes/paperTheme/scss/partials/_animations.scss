@@ -1,15 +1,15 @@
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com 
+Author: _author_
 
 Stylesheet: Keyframe Animations
 
 Keep all of your CSS3 Keyframe Animations here for easy reference. 
 http://www.w3schools.com/css/css3_animations.asp
 http://css-tricks.com/snippets/css/keyframe-animation-syntax/
-
 ******************************************************************/
-/*
+
+/* =======================================================================
 MIXIN USAGE:
 
 @include keyframes(move-the-object) {
@@ -17,7 +17,16 @@ MIXIN USAGE:
   100% { left: 200px; }
 }
 
+EXAMPLE
 .object-to-animate {
-  @include animation('move-the-object .5s 1', 'move-the-object-again .5s 1 .5s');
+  @include animation(name duration iteration-count delay timing fill);
+
+  animation-name: move-the-object;
+  animation-duration: 4s;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 } 
-*/
+========================================================================== */

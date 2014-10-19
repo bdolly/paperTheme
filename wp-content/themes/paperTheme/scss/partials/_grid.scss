@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com 
+Author: _author_
 
 Stylesheet: Grid Stylesheet
 
@@ -9,22 +9,92 @@ called at the top the style.scss stylesheet.
 
 There are a ton of grid solutions out there. You should definitely
 experiment with your own. Here is our favorite thus far. 
+******************************************************************/
 
+/* =======================================================================
+SUSY GRID SYSTEM
 http://susy.oddbird.net/ - Grids using Compass. Very elegant.
 
 Be sure your dev. environment has the susy gem installed first 
 "gem install susy"
-
 
 The basic Susy layout is composed using two simple mixins:
 establish a layout context
 @include container;
 
 lay out your elements
-@include span(<width>); 
+@include span(<columns> of <context total columns>);    
+or with an offset
+@include span(<columns> at <offset columns> of <context total columns>);    
+========================================================================== */
 
-******************************************************************/
+
 @import "susy";
+/* =======================================================================
+  Susy Global Defaults 
+========================================================================== */
+$susy: (
+  flow: "ltr",
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  // container: auto,
+  container-position: center,
+  columns: 16,
+  gutters: .25,
+  global-box-sizing: borer-box,
+  // last-flow: to,
+  debug: (
+    image: show,
+    color: rgba(255,0,0,0.5),
+    output: overlay,
+    toggle: bottom right,
+  ),
+  use-custom: (
+    // background-image: true,
+    // background-options: false,
+    // box-sizing: true,
+    // clearfix: false,
+    rem: true,
+  )
+);
 
-body { @include container(80em); }
-// nav { @include span(25%); }
+/* =======================================================================
+  GRID 
+========================================================================== */
+.grid-container{
+	@include container(960px);
+	height:auto;
+	position: relative;
+	padding:0 3%;
+}//.grid-container
+
+
+/* =======================================================================
+  LAYOUT
+  prefix these styles with .l- so that you know they 
+  belong to the layout css module
+ ========================================================================== */
+.l-no-mp{margin: 0; padding:0;}
+
+/* Floats ============================== */
+.l-float-none{float:none;}
+.l-float-left{float:left;}
+.l-float-right{float:right;}
+
+
+/* Margin ============================== */
+.l-center{ margin: 0 auto;}
+.l-no-margin{ margin: 0;}
+
+.l-flex-center {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+
+/* Padding ============================== */
+.l-no-pad{ padding:0;}
+
+

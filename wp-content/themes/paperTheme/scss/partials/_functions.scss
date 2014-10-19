@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com 
+Author: _author_
 
 Stylesheet: Sass Functions
 
@@ -16,8 +16,7 @@ http://sass-lang.com/documentation/Sass/Script/Functions.html
 
 ******************************************************************/
 
-
-/*********************
+/* =======================================================================
 COLOR FUNCTIONS
 These are helpful when you're working
 with shadows and such things. It's essentially
@@ -26,8 +25,8 @@ a quicker way to write RGBA.
 Example:
 box-shadow: 0 0 4px black(0.3);
 compiles to:
-box-shadow: 0 0 4px rgba(0,0,0,0.3);
-*********************/
+box-shadow: 0 0 4px rgba(0,0,0,0.3);   
+========================================================================== */
 
 // black
 @function black($opacity) {
@@ -40,23 +39,24 @@ box-shadow: 0 0 4px rgba(0,0,0,0.3);
 }
 
 
-/*********************
+/* =======================================================================
 RESPONSIVE HELPER FUNCTION
-If you're creating a responsive site, then
-you've probably already read
-Responsive Web Design: http://www.abookapart.com/products/responsive-web-design
-
 Here's a nice little helper function for calculating
 target / context
-as mentioned in that book.
+
 
 Example:
 width: cp(650px, 1000px);
 or
 width: calc-percent(650px, 1000px);
 both compile to:
-width: 65%;
-*********************/
+width: 65%;   
+
+NOTE: this function may be deprecated depening upon 
+the grid system you use, but we'll leave it here for reference. 
+An example would be the susy grid system (http://susy.oddbird.net/)
+does the calcuation for you. 
+========================================================================== */
 
 @function cp($target, $container) {
   @return calc-percent($target, $container);

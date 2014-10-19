@@ -1,10 +1,10 @@
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com 
+Author: _author_
 
 Stylesheet: Form Styles
 
-We put all the form and button styles in here to setup a consistent
+We put all the form styles in here to setup a consistent
 look. If we need to customize them, we can do this in the main
 stylesheets and just override them. Easy Peasy.
 
@@ -15,10 +15,9 @@ If you want to create your own, use this helpful link:
 http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
 
 ******************************************************************/
-
-/*********************
-INPUTS
-*********************/
+/* =======================================================================
+INPUTS   
+========================================================================== */
 
 // setting up defaults
 input[type="text"],
@@ -43,7 +42,7 @@ textarea,
   line-height: 40px;
   padding: 0 12px;
   margin-bottom: 14px;
-  font-size: 1em;
+  @include rem(font-size, 1.0);
   color: $text-color;
   border-radius: 3px;
   vertical-align: middle;
@@ -51,9 +50,8 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  // font-family: ;
   background-color: $gray;
-  @include transition(background-color 0.24s ease-in-out);
+  transition: background-color 0.24s ease-in-out;
 
   // a focused input (or hovered on)
   &:focus,
@@ -105,7 +103,7 @@ textarea,
 textarea {
   max-width: 100%;
   min-height: 120px;
-  line-height: 1.5em;
+  @include rem(line-height,1.5);
 }
 
 // selects
