@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com 
+Author: _author_
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -10,36 +10,39 @@ So you can start working with more styles, background images,
 and other resources. You'll also notice the grid starts to
 come into play. Have fun!
 
+
+TABLE OF CONTENTS 
+be sure to keep this updated as your project grows
+1. General 
+2. Grid and Layout
+3. Header 
+4. Wordpress Menu Nav 
+5. Wordpress Sidebars and Widgets 
+6. Footer Styles
 ******************************************************************/
 
-
-/*********************
-GENERAL STYLES
-*********************/
-
+/* =======================================================================
+1. GENERAL STYLES   
+========================================================================== */
 body {}
 
-/*********************
-LAYOUT & GRID STYLES
-*********************/
 
-.wrap {
-	width: 760px;
-}
+/* =======================================================================
+2. GRID and LAYOUT
+========================================================================== */
+.l-wrap { width: 760px; }
 
-/*********************
-HEADER STYLES
-*********************/
+/* =======================================================================
+3. HEADER 
+========================================================================== */
+#masthead {}
+	#site-logo {}
 
-.header {}
-
-	#logo {}
-
-/*********************
-NAVIGATION STYLES
-*********************/
-
-.nav {
+/* =======================================================================
+4. WORDPRESS MENU NAV STYLES 
+  base styles in partials/wp_menu_nav 
+========================================================================== */
+.menu {
 	border: 0;
 	ul {
 		margin-top:0;
@@ -135,13 +138,11 @@ NAVIGATION STYLES
 
 } /* end .nav */
 
-/*********************
-SIDEBARS & ASIDES
-*********************/
-
-.sidebar {
-	margin-top: 2.2em;
-}
+/* =======================================================================
+5. WORDPRESS SIDEBARS AND WIDGETS
+  base styles in modules/wp_sidebars_widgets
+========================================================================== */
+.sidebar { margin-top: 2.2em; }
 
 	.widgettitle {
 		border-bottom: 2px solid #444;
@@ -258,10 +259,9 @@ SIDEBARS & ASIDES
 	.textwidget p {}
 
 
-/*********************
-FOOTER STYLES
-*********************/
-
+/* =======================================================================
+6.  FOOTER 
+ ========================================================================== */
 /*
 you'll probably need to do quite a bit
 of overriding here if you styled them for

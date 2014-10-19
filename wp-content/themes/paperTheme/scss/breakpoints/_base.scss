@@ -51,8 +51,6 @@ body {
 }
 
 
-
-
 /* =======================================================================
 2. LINK STYLES   
 be careful not to mix these up with your _buttons.scss styles
@@ -61,14 +59,10 @@ a, a:visited {
 	color: $link-color;
 
 	/* on hover */
-	&:hover, &:focus {
-		color: $link-hover;
-	}
+	&:hover, &:focus { color: $link-hover; }
 
 	/* on click */
-	&:active {
-
-	}
+	&:active {}
 
 	/* mobile tap color */
 	&:link {
@@ -84,7 +78,7 @@ a, a:visited {
 
 
 /* =======================================================================
- 3. WP BODY CLASSES
+ 3. WP BODY CLASSES (pages)
  Keep in mind these only apply to the < 480px 
 ========================================================================== */
 @import "partials/wp_body_classes";
@@ -94,7 +88,6 @@ a, a:visited {
 /* =======================================================================
 4. HEADER STYLES   
 ========================================================================== */
-
 #masthead { background-color: $black; }
 
 	#site-logo {

@@ -8,7 +8,7 @@ module.exports = function (grunt) {
           Set Client Name variable to be used throughout task 
         ========================================================================== */
         clientName: 'paperTheme_production',
-        author: 'paperTheme_author',
+        author: 'Benjamin Dolly',
         /* ======================================================================= */
                    
 
@@ -191,7 +191,7 @@ module.exports = function (grunt) {
         },
         //replace all _paperTheme reference in project with <%= clientName %>
        replace: {
-          underscoresRefs: {
+          paperThemeRefs: {
             src: '../<%= clientName %>/**/*.{php,css}',       
             overwrite:true,             
             replacements: [{
@@ -212,11 +212,21 @@ module.exports = function (grunt) {
             },{
               from: "_paperTheme-",
               to: '<%= clientName %>'
-            },{
-              from: '_author_',
-              to: '<%= author %>_'
-            }]
+            }],
           },
+
+          cssSiteAuthor: {
+            src: 'css/**/*.css',       
+            overwrite:true,             
+            replacements: [{
+                from:  '_paperTheme.',                   
+                to: '<%= clientName %>.'
+              },{
+                from: '_author_',
+                to: '<%= author %>'
+            }],
+          },
+
           assetsRefs: {
             src: ['../<%= clientName %>/**/**.php'],       
             overwrite:true,             
@@ -305,6 +315,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', ['clean',
                                  'compass:prod',
                                  'autoprefixer',
+                                 'replace:cssSiteAuthor',
                                  'jshint',
                                  'concat',
                                  'imagemin',

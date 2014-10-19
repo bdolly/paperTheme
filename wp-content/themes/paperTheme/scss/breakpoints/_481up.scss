@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com 
+Author: _author_
 
 Stylesheet: 481px and Up Stylesheet
 
@@ -13,6 +13,13 @@ A word of warning. This size COULD be a larger mobile device,
 so you still want to keep it pretty light and simply expand
 upon your base.scss styles.
 
+
+TABLE OF CONTENTS 
+be sure to keep this updated as your project grows
+1. Wordpress Menu Nav (imported partial)
+2. Wordpress Posts and Content (imported module)
+3. Footer Styles
+
 ******************************************************************/
 
 /*
@@ -22,14 +29,12 @@ anymore, so just be aware that if you drop
 them in here, they won't work.
 */
 
+/* =======================================================================
+1. WORDPRESS MENU NAV STYLES 
+base styles in partials/wp_menu_nav
+========================================================================== */
+.menu {}
 
-/*********************
-NAVIGATION STYLES
-*********************/
-
-.nav {}
-
-	/* .menu is clearfixed inside mixins.scss */
 	.menu {
 		ul {
 			li {
@@ -73,9 +78,10 @@ NAVIGATION STYLES
 		} /* end .menu ul */
 	} /* end .menu */
 
-/*********************
-POSTS & CONTENT STYLES
-*********************/
+/* =======================================================================
+2.  WORDPRESS POSTS & CONTENT 
+base styles in modules/wp_posts
+========================================================================== */
 
 /* entry content */
 .entry-content {
@@ -101,14 +107,12 @@ POSTS & CONTENT STYLES
 
 } /* end .entry-content */
 
-/*********************
-FOOTER STYLES
-*********************/
 
-/*
-check your menus here. do they look good?
-do they need tweaking?
-*/
+/* =======================================================================
+  3. FOOTER 
+  check your menus here. do they look good?
+  do they need tweaking?
+ ========================================================================== */
 .footer-links {
 	ul {
 		li {}

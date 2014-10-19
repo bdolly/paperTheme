@@ -26,7 +26,7 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 ========================================================================== */
 
 // normalize: http://necolas.github.io/normalize.css/
-// @import "partials/normalize";
+@import "partials/normalize";
 
 // Sass variables
 @import "partials/variables";
@@ -45,7 +45,7 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 
 // the grid
 // using susy grid system 
-// also includes .l- layout styles
+// includes .l- layout styles
 @import "partials/grid";
 
 
