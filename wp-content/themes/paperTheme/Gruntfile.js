@@ -7,7 +7,8 @@ module.exports = function (grunt) {
         /* =======================================================================
           Set Client Name variable to be used throughout task 
         ========================================================================== */
-        clientName: '_paperTheme(production)',
+        clientName: 'paperTheme_production',
+        author: 'paperTheme_author',
         /* ======================================================================= */
                    
 
@@ -197,6 +198,9 @@ module.exports = function (grunt) {
               from:  ' _paperTheme',                   
               to: ' <%= clientName %>'
             },{
+              from:  '_paperTheme.',                   
+              to: '<%= clientName %>.'
+            },{
               from: '@package _paperTheme',
               to: '@package <%= clientName %>'
             },{
@@ -205,6 +209,12 @@ module.exports = function (grunt) {
             },{
               from: "'_paperTheme'",
               to: "'<%= clientName %>'"
+            },{
+              from: "_paperTheme-",
+              to: '<%= clientName %>'
+            },{
+              from: '_author_',
+              to: '<%= author %>_'
             }]
           },
           assetsRefs: {
