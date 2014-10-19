@@ -282,18 +282,17 @@ module.exports = function (grunt) {
             }
           },
         },
-        // run tasks concurrently to attempt to speed up execution
-        // to measure execution uncomment "require('time-grunt')(grunt);""
-        concurrent: {
-          compile: ['clean:sourcemap', 'compass:dev', 'jshint', ],
-          prefix :['autoprefixer','concat', ],
-          minify: ['cssmin', 'uglify', 'imagemin']
-        },
-
+        
        watch: {
             files: ['scss/**/*.scss', 'css/*', 'js/*.js', 'imgs/**/*.{png,jpg,jpeg,gif,svg}'],
-            // tasks: ['compass:dev','autoprefixer','jshint','concat', 'cssmin', 'uglify', 'imagemin']
-            tasks:['concurrent', 'notify:watch']
+            tasks: ['clean:sourcemap',
+                    'compass:dev',
+                    'autoprefixer',
+                    'jshint',
+                    'concat', 
+                    'cssmin', 
+                    'uglify', 
+                    'notify:watch']
         }
     });
     // register "grunt watch" task for use
@@ -306,11 +305,11 @@ module.exports = function (grunt) {
     grunt.registerTask('build', ['clean',
                                  'compass:prod',
                                  'autoprefixer',
+                                 'jshint',
                                  'concat',
                                  'imagemin',
                                  'svgmin',
                                  'cssmin',
-                                 'jshint',
                                  'uglify',
                                  'copy',
                                  'replace']);

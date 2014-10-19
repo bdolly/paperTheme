@@ -1,51 +1,52 @@
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com 
+Author: _author_
 
 Stylesheet: Variables
 
-Here is where we declare all our variables like colors, fonts,
+Here is where we declare all our variables like colors,
 base values, and defaults. We want to make sure this file ONLY
 contains variables that way our files don't get all messy.
 No one likes a mess.
 
 ******************************************************************/
 
-/*********************
+/* =======================================================================
 COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
-*********************/
+It's helpful to add the rgb values in comments for reference. 
+http://www.javascripter.net/faq/hextorgb.htm
+========================================================================== */
 
-$alert-yellow:      #ebe16f;
-$alert-red:         #fbe3e4;
-$alert-green:       #e6efc2;
-$alert-blue:        #d5edf8;
 
-$black:             #323944;
-$white:             #fff;
+$alert-yellow:      #ebe16f; //rgb(235,225,111)
+$alert-red:         #fbe3e4; //rgb(251,227,228)
+$alert-green:       #e6efc2; //rgb(230,239,194)
+$alert-blue:        #d5edf8; //rgb(213,237,248)
 
-$light-gray:        #f8f9fa;
-$gray:              #eaedf2;
-$text-color:        #5c6b80;
-$meta-gray:         #9fa6b4;
+// rich black, this a concept adapted from print design 
+// to make a richer deeper black with more character than #000
+// 
+// functions for black and white rgba opacity available in
+// scss/partials/_functions.scss
+$black:             #323944; //rgb(50,57,68)
+$white:             #fff;    //rgb(255,255,255)
 
-$tan:               #eceee5;
+$light-gray:        #f8f9fa; //rgb(248,249,250)
+$gray:              #eaedf2; //rgb(234,237,242)
 
-$green:             #7dd667;
+$text-color:        #5c6b80; //rgb(92,107,128)
+$meta-gray:         #9fa6b4; //rgb(159,166,180)
 
-$bones-pink:        #f01d4f;
-$blue:              #2980b9;
+$tan:               #eceee5; //rgb(236,238,229)
+
+$green:             #7dd667; //rgb(125,214,103)
+
+$bones-pink:        #f01d4f; //rgb(240,29,79)
+$blue:              #2980b9; //rgb(41,128,185)
 
 $link-color:        $bones-pink;
 $link-hover:        darken($link-color, 9%);
 
-$border-color:      #ccc;
-$disabled-gray:     #cfcfcf;
+$border-color:      #ccc; 	//rgb(204,204,204)
+$disabled-gray:     #cfcfcf;//rgb(207,207,207)
 
-
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/

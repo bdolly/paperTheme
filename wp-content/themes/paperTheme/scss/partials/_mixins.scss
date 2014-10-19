@@ -26,7 +26,7 @@ TRANSITION
 *********************/
 
 /*
-I totally rewrote this to be cleaner and easier to use.
+I totally rewrote this to be cleaner and easier to use.f
 You'll need to be using Sass 3.2+ for these to work.
 Thanks to @anthonyshort for the inspiration on these.
 USAGE: @include transition(all 0.2s ease-in-out);
@@ -117,4 +117,45 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
+
+/* =======================================================================
+  REM font sizing
+  http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+========================================================================== */
+// @include rem(font-size, 13);
+// output 
+// font-size: 13px;
+// font-size: 13rem;
+
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@mixin rem($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*10}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  } 
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  } 
+  
+  #{$property}: $pxValues; 
+  #{$property}: $remValues; 
+}
 
