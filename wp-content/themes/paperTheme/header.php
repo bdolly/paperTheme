@@ -38,17 +38,17 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_paperTheme' ); ?></a>
+<div id="page" class="hfeed site grid-container">
+	<a class="skip-link text-screen-reader" href="#content"><?php _e( 'Skip to content', '_paperTheme' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			
-			<h1 id="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> 
+			<h1 id="site-logo" class="l-no-margin"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h4 class="l-no-mp site-description"><?php bloginfo( 'description' ); ?></h4> 
 		</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="navigation navigation--main" role="navigation">
 			<button class="menu-toggle"><?php _e( 'Primary Menu', '_paperTheme' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->

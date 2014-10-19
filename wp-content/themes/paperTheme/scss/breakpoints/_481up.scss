@@ -31,7 +31,7 @@ them in here, they won't work.
 
 /* =======================================================================
 1. WORDPRESS MENU NAV STYLES 
-base styles in partials/wp_menu_nav
+base styles in partials/wp_nav_menu
 ========================================================================== */
 .menu {}
 
@@ -77,6 +77,8 @@ base styles in partials/wp_menu_nav
 			}  /* end current highlighters */
 		} /* end .menu ul */
 	} /* end .menu */
+
+	
 
 /* =======================================================================
 2.  WORDPRESS POSTS & CONTENT 

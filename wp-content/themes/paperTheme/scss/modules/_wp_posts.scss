@@ -1,5 +1,15 @@
 /* =======================================================================
   WORDPRESS POSTS & CONTENT BASE STYLES
+
+TABLE OF CONTENTS 
+be sure to keep this updated as your project grows
+1. Content and .hentry
+2. Title module
+3. Individual Post (.post-id, .post, .page, etc)
+4. Entry-content module
+5. Image Caption module (wp-caption)
+6. Image Gallery module 
+7. Tags module 
 ========================================================================== */
 
 #content {	margin-top: 1.5em; }
@@ -26,20 +36,22 @@
 
 		} /* end .hentry */
 
-		.single-title,
-		.page-title,
-		.entry-title {
-			margin: 0;
-		}
 
-		.single-title {}
 
-		.page-title {}
+		/* title module ========================================================= */
+		.title{ margin: 0; }
 
-		.entry-title {}
+		.title--single {}
 
-		.archive-title {}
+		.title--page {}
 
+		.title--entry {}
+
+		.title--archive {}
+
+
+
+		/* individual post module ========================================================= */
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
 		.post {}            /* general post style */
@@ -59,7 +71,11 @@
 			time {}
 		}
 
-		/* entry content */
+
+
+		/* entry content module ========================================================= */
+		// be careful styling elements w/o classes as you want
+		// to be sure the actual content will not break
 		.entry-content {
 			padding: 1.5em 1.5em 0;
 
@@ -185,8 +201,23 @@
 				border-radius: 3px;
 			}
 
+
+			/* Make sure embeds and iframes fit their containers */
+			embed,
+			iframe,
+			object {
+				max-width: 100%;
+			}
+
 		} /* end .entry-content */
 
+
+
+
+
+		/* iamge caption module ========================================================= */
+		// .wp-cation is added to the figcaption element via
+		// inc/cleanPostsImgs.php
 		.wp-caption {
 			max-width: 100%;
 			background: #eee;
@@ -197,17 +228,22 @@
 				max-width: 100%;
 				margin-bottom: 0;
 				width: 100%;
+				&[class*="wp-image-"] {display: block; margin: 0 auto; }
 			}
 
-			p.wp-caption-text {
+			p {
 				font-size: 0.85em;
 				margin: 4px 0 7px;
 				text-align: center;
 			}
 
 		} /* end .wp-caption */
+		
 
-		/* image gallery styles */
+
+
+
+		/* image gallery module ========================================================= */		
 		.gallery {
 
 			dl {
@@ -223,6 +259,14 @@
 			dd {}
 
 		} /* end .gallery */
+		.gallery-item {
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+			width: 100%;
+		}
+
+
 
 		/* gallery caption styles */
 		.gallery-caption {}
@@ -232,7 +276,12 @@
 		.size-medium {}
 		.size-thumbnail {}
 
+
+
+	/* tags module ========================================================= */				
 	// the tag output
-	.tags {
-		margin: 0;
-	}
+	.tags { margin: 0; }
+	.tags-links {}
+
+
+

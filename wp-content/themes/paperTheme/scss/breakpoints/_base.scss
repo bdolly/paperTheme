@@ -17,11 +17,13 @@ be sure to keep this updated as your project grows
 2. Link 
 3. Wordpress Body Classes (pages)
 4. Header 
-5. Wordpress Menu Nav (imported partial)
-6. Wordpress Posts and Content (imported module)
-7. Wordpress Page Nav (imported partial)
-8. Wordpress Sidebars and Widgets (imported module)
-9. Footer Styles
+5. Navigation 
+6. Wordpress Menu Nav (imported partial)
+7. Wordpress Main Nav (imported partial)
+8. Wordpress Page Nav (imported partial)
+9. Wordpress Posts and Content (imported module)
+10.Wordpress Sidebars and Widgets (imported module)
+11.Footer Styles
 ******************************************************************/
 
 
@@ -91,38 +93,68 @@ a, a:visited {
 #masthead { background-color: $black; }
 
 	#site-logo {
-		margin: 0.75em 0;
 
 		a {color: $white; }
 	}
 
 
 /* =======================================================================
- 5. WORDPRESS MENU NAV STYLES  
+ 5. NAVIGATION  
  ========================================================================== */
- @import "partials/wp_menu_nav";
+.navigation{
+	margin: 0 0 1.5em;
+  	overflow: hidden;
+}
+
+
+.navigation .nav-previous,
+.navigation .nav-previous,
+.navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+
+.navigation .nav-next,
+.navigation .nav-next,
+.navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
 
 
 /* =======================================================================
-  6. WORDPRESS POSTS & CONTENT BASE STYLES 
+ 6. WORDPRESS MENU NAV STYLES  
+ ========================================================================== */
+ @import "partials/wp_nav_menu";
+
+
+/* =======================================================================
+ 7. WORDPRESS MAIN NAV STYLES  (GLOBAL NAV)
+ ========================================================================== */
+ @import "partials/wp_nav_main";
+
+
+/* =======================================================================
+8. WORDPRESS PAGE NAV STYLES   
+========================================================================== */
+@import "partials/wp_nav_page";
+
+
+/* =======================================================================
+9. WORDPRESS POSTS & CONTENT BASE STYLES 
  ========================================================================== */
 @import "modules/wp_posts";
 
 
 /* =======================================================================
-7. WORDPRESS PAGE NAV STYLES   
-========================================================================== */
-@import "partials/wp_page_nav";
-
-
-/* =======================================================================
- 8. WORDPRESS SIDEBARS AND WIDGETS
+10. WORDPRESS SIDEBARS AND WIDGETS
 ========================================================================== */
 @import "modules/wp_sidebars_widgets";
 
 
 /* =======================================================================
-9. FOOTER STYLES 
+11. FOOTER STYLES 
 ========================================================================== */
 
 .footer {

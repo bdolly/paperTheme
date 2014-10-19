@@ -40,7 +40,7 @@ function clean_caption_shortcode( $empty, $attr, $content ){
 	if ( 1 > (int) $attr['width'] || empty( $attr['caption'] ) ) {
 		return '';
 	}
-	$content .='<figcaption class="wp-caption-text">' . $attr['caption'] . '</figcaption>';
+	$content .='<figcaption class="wp-caption">' . $attr['caption'] . '</figcaption>';
 	return $content;
 }
 

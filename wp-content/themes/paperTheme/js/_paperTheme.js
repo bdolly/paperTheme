@@ -23,7 +23,7 @@ var globalVar;
 	var logging = false;
 
 	// helpful logging functions
-	var paperTheme_log = function(message){ if(logging === true){console.log('paperThme LOG: '+ message);} },
+	var paperTheme_log = function(message){ if(logging === true){console.log('paperTheme LOG: '+ message);} },
 	 	paperTheme_json_log = function(message, jsnObj){
 	 	 					if(logging === true){
 	 	 						console.log('paperTheme JSON LOG: '+ message+': '+JSON.stringify(jsnObj,undefined,2 ) );

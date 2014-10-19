@@ -17,8 +17,8 @@ function _paperTheme_paging_nav() {
 		return;
 	}
 	?>
-	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', '_paperTheme' ); ?></h1>
+	<nav class="navigation navigation--paging" role="navigation">
+		<h1 class="text-screen-reader"><?php _e( 'Posts navigation', '_paperTheme' ); ?></h1>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
@@ -48,8 +48,8 @@ function _paperTheme_post_nav() {
 		return;
 	}
 	?>
-	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', '_paperTheme' ); ?></h1>
+	<nav class="navigation navigation--post" role="navigation">
+		<h1 class="text-screen-reader"><?php _e( 'Post navigation', '_paperTheme' ); ?></h1>
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', '_paperTheme' ) );

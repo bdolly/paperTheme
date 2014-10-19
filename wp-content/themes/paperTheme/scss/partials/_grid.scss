@@ -44,6 +44,8 @@ $susy: (
   gutters: .25,
   global-box-sizing: borer-box,
   // last-flow: to,
+  // be sure to comment out the debug before
+  // building the production theme
   debug: (
     image: show,
     color: rgba(255,0,0,0.5),
