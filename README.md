@@ -50,16 +50,16 @@ This workflow assumes a basic knowledge of the terminal, GIT, WP installation, N
 - uglify - js minification
 - notify:watch - letting you know what's up 
  
-
+<br>
 ```$ grunt clean ```  
 - clear .tmp/ , .sass-cache/, and sourcemaps
 
-
+<br>
 ```$ grunt test-js ```  
 - check all javascript, concat js, and minify js 
 
 
-
+<br>
 ```$ grunt build ``` 
 - clean
 - compass:prod
@@ -78,7 +78,7 @@ This workflow assumes a basic knowledge of the terminal, GIT, WP installation, N
 
 
 
-
+<br>
 ```$ grunt deploy ``` 
 - grunt clean
 - gruny build 
