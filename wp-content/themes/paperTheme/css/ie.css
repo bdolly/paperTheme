@@ -18,8 +18,8 @@ understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 ******************************************************************/
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com
+Author: _author_
 
 Stylesheet: Variables
 
@@ -40,8 +40,8 @@ use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com
+Author: _author_
 
 Stylesheet: Mixins Stylesheet
 
@@ -82,8 +82,8 @@ BOX SIZING
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com
+Author: _author_
 
 Stylesheet: IE Grid Styles
 
@@ -96,8 +96,8 @@ whatever you use in here.
 
 ******************************************************************/
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com
+Author: _author_
 
 Stylesheet: 481px and Up Stylesheet
 
@@ -184,8 +184,8 @@ do they need tweaking?
 */
 /* end .footer-links */
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com
+Author: _author_
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -349,8 +349,8 @@ mobile. Make sure to double check these!
 
 /* end .footer-links */
 /******************************************************************
-Site Name:
-Author: TPD Desgin House
+Site Name: _paperTheme.com
+Author: _author_
 
 Stylesheet: Desktop Stylsheet
 
