@@ -88,7 +88,13 @@ var globalVar;
 					})
 					.done(function(data){
 		        		if(typeof onSuccess === "function"){ onSuccess(data);}
-						paperTheme_json_log(" onSuccess ", data );
+
+		        		if(typeof data === "object"){ 
+		        			paperTheme_json_log("Success JSON Data: ", data );
+		        		}else{
+		        			paperTheme_log("Success Data: "+ data );
+		        		}	
+						
 					})
 					.fail(function(jqXHR, textStatus, errorThrown) {
                 	    paperTheme_log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
@@ -123,8 +129,10 @@ var globalVar;
 	 	}, 
 	 	function(){
 	 	// success callback
-	 	paperTheme_log('ajax working');
+	 	paperTheme_log('ajax call successful');
 	 });
+
+	
 
 
 }($));//end anonymous wrapper function
