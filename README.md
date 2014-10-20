@@ -2,7 +2,7 @@
 
 paperTheme is a WordPress hacker theme built from  _s (http://underscores.me) with parts adapted from Bones (http://themble.com/bones/). Hack it, push it, pull request it, put a fork in it, have fun with it and if you have an issue with that.....well you know where to put it.
 <hr>
-##Repo-genesis
+###Repo-genesis (how this repo started)
 
 paperTheme's root repo is a fork of the Wordpress repo (https://github.com/WordPress/WordPress) which is updated every 15minutes from their svn. This fork was created so that the core files will easily be in-sync with the latest WordPress updates. This also allows you roll back core files easily 
 and version out certain plugins so that when you clone the repo you have everything you need. This also allows you to grab the optimized .htaccess file when you clone it down. 
@@ -13,7 +13,7 @@ paperTheme itself is meant to be used as an uncompressed developement theme with
 
 <hr>
 ##paperTheme workflow
-==========
+
 This workflow assumes a basic knowledge of the terminal, GIT, WP installation, Node.js, and Grunt.js 
 
 1. git clone where you want the WP install to be 
@@ -33,3 +33,4 @@ This workflow assumes a basic knowledge of the terminal, GIT, WP installation, N
 11. Activate your theme and check it out locally to make sure it's solid
 13. ```$ grunt deploy ``` <br>
     This grunt builds, git adds and commits your production theme, then runs git push origin master
+14. DRINK BEER! (or don't if you're straight edge, it's cool )
