@@ -103,7 +103,10 @@ function _paperTheme_scripts() {
 		wp_deregister_script('jquery');
 		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"), true, '1.11.1', true);
 		wp_enqueue_script('jquery');
-		
+
+		// AJAX
+		// declare the URL to the file that handles the AJAX request (wp-admin/admin-ajax.php)
+		wp_localize_script( '_paperTheme-custom-js', 'LocalAJAX', array( 'url' => admin_url( 'admin-ajax.php' ) ) );
 
 		// enqueue custom.js after Jquery in the footer
 		wp_enqueue_script( '_paperTheme-custom-js' );
@@ -137,4 +140,9 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+ * AJAX functions called by javascript actions
+ */
+require get_template_directory() . '/inc/ajax-functions.php';
 

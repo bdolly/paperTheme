@@ -20,7 +20,9 @@ var globalVar;
 	/* =======================================================================
 	Private Variables
 	========================================================================== */
-	var logging = false;
+	var logging = true,
+		// get "type-* " class and push to array,
+		postType_class = ($('.site-main article').length && $('.site-main article').attr('class').match(/(type-)\w+/g) ) ? $('.site-main article').attr('class').match(/(type-)\w+/g)[0].split('-') : {};
 
 	// helpful logging functions
 	var paperTheme_log = function(message){ if(logging === true){console.log('paperTheme LOG: '+ message);} },
@@ -59,10 +61,70 @@ var globalVar;
 
 
 
+
+
+	 /* =======================================================================
+	AJAX - Category Navigation loading
+	========================================================================== */
+	var wpAJAX = (function($){
+		// private jsModule() variables
+		
+
+		function request(requestType ,postData, onSuccess, onError ){
+			try{
+				var request_type = requestType.toUpperCase();
+
+				$.ajaxSetup({cache:false});
+					// AJAX POST request breakdown
+					// url:
+					//  -- send AJAX POST request to admin-ajax.php set as global var by localize-script in functions.php
+					// data:{ action: 
+					// 		  -- make sure "action" is set to the same add_action as in "add_action( 'wp_ajax_nopriv_ACTION-GOES-HERE', 'ACTION-GOES-HERE' );	"
+					
+					$.ajax({
+						type:request_type ,
+						url: LocalAJAX.url,
+						data:postData,
+					})
+					.done(function(data){
+		        		if(typeof onSuccess === "function"){ onSuccess(data);}
+						paperTheme_json_log(" onSuccess ", data );
+					})
+					.fail(function(jqXHR, textStatus, errorThrown) {
+                	    paperTheme_log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+                	    if(typeof onError === "function"){ onError(jqXHR, textStatus, errorThrown);}
+                	});
+			}catch(ex){console.log("wpAjax.request("+request_type+"):"+ ex);}
+		}//post()
+			
+	
+		return{  request: request };
+
+	 })($);//end wpAJAX module
+
+
+
+	 
+
 	/* =======================================================================
 		Initialize Modules
 	========================================================================== */
 	jsModule.init();
+
+	// example admin-ajax request
+	wpAJAX.request('GET',{
+	 		action: 'lazyLoad_request', 
+	 		post_type:'post', 
+	 		page_no: 1,
+	 		posts_per: 3,
+	 		cat_name: 'uncategorized',
+	 		tag_name: 'tag',
+	 		search_term: 'search term here'
+	 	}, 
+	 	function(){
+	 	// success callback
+	 	paperTheme_log('ajax working');
+	 });
 
 
 }($));//end anonymous wrapper function
