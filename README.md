@@ -41,14 +41,14 @@ This workflow assumes a basic knowledge of the terminal, GIT, WP installation, N
 ####Grunt Tasks list    
 
 - ```$ grunt watch ```
--- clean:sourcemap
--- compass:dev
--- autoprefixer
--- jshint - javascript linting
--- concat - js and css
--- cssmin
--- uglify - js minification
--- notify:watch - letting you know what's up 
+- - clean:sourcemap
+- - compass:dev
+- - autoprefixer
+- - jshint - javascript linting
+- - concat - js and css
+- - cssmin
+- - uglify - js minification
+- - notify:watch - letting you know what's up 
  
 - ```$ grunt clean ```  
 - - clear .tmp/ , .sass-cache/, and sourcemaps
