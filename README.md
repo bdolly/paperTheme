@@ -50,11 +50,15 @@ This workflow assumes a basic knowledge of the terminal, GIT, WP installation, N
 - - uglify - js minification
 - - notify:watch - letting you know what's up 
  
+
 - ```$ grunt clean ```  
 - - clear .tmp/ , .sass-cache/, and sourcemaps
 
+
 - ```$ grunt test-js ```  
 - - check all javascript, concat js, and minify js 
+
+
 
 - ```$ grunt build ``` 
 - - clean
@@ -71,6 +75,8 @@ This workflow assumes a basic knowledge of the terminal, GIT, WP installation, N
 - - replace 
 - - - uses ClientName variable to replace all paperTheme references in production theme
 - - - point js, css, imgs urls to assets folder in production theme
+
+
 
 
 - ```$ grunt deploy ``` 
