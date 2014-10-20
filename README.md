@@ -49,7 +49,33 @@ This workflow assumes a basic knowledge of the terminal, GIT, WP installation, N
 - - cssmin
 - - uglify - js minification
 - - notify:watch - letting you know what's up 
-- grunt clean = clear .tmp/ , .sass-cache/, and sourcemaps
-- grunt test-js = check all javascript, concat js, and minify js 
-- grunt build = build out optimized production theme locally for testing 
-- grunt deploy - runs grunt build and then git commits and pushs 
+ 
+- ```$ grunt clean ```  
+- - clear .tmp/ , .sass-cache/, and sourcemaps
+
+- ```$ grunt test-js ```  
+- - check all javascript, concat js, and minify js 
+
+- ```$ grunt build ``` 
+- - clean
+- - compass:prod
+- - autoprefixer
+- - replace:cssSiteAuthor - replaces only in css/ of dev. theme
+- - jshint
+- - concat - js and css respectively 
+- - imagemin - png,jpg,gif
+- - svgmin - preserves IDs and classes
+- - cssmin
+- - uglify - javascript minification
+- - copy - copy assets to production theme
+- - replace 
+- - - uses ClientName variable to replace all paperTheme references in production theme
+- - - point js, css, imgs urls to assets folder in production theme
+
+
+- ```$ grunt deploy ``` 
+- - grunt clean
+- - gruny build 
+- - shell:gitAddCommit - git adds and commit your changes 
+- - gitpush:production
+- - - git push origin master
