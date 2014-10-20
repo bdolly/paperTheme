@@ -34,3 +34,22 @@ This workflow assumes a basic knowledge of the terminal, GIT, WP installation, N
 13. ```$ grunt deploy ``` <br>
     This grunt builds, git adds and commits your production theme, then runs git push origin master
 14. DRINK BEER! (or don't if you're straight edge, it's cool )
+
+
+
+
+####Grunt Tasks list    
+
+- ```$ grunt watch ```
+- - clean:sourcemap
+- - compass:dev
+- - autoprefixer
+- - jshint - javascript linting
+- - concat - js and css
+- - cssmin
+- - uglify - js minification
+- - notify:watch - letting you know what's up 
+- grunt clean = clear .tmp/ , .sass-cache/, and sourcemaps
+- grunt test-js = check all javascript, concat js, and minify js 
+- grunt build = build out optimized production theme locally for testing 
+- grunt deploy - runs grunt build and then git commits and pushs 
