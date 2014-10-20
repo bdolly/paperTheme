@@ -21,6 +21,7 @@ function _paperTheme_remove_width_attribute( $html ) {
 
 
 
+
 add_filter( 'img_caption_shortcode', 'clean_caption_shortcode', 10, 3 );
 /**
  * Cleaup the img_caption_shortcode that is executed when adding captions

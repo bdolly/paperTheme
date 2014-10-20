@@ -6,10 +6,24 @@ Stylesheet: Typography
 
 Need to import a font or set of icons for your site? Drop them in
 here or just use this to establish your typographical grid. Or not.
+
+
+TABLE OF CONTENTS 
+keep these consistent with your css comment header
+this way you can copy and search for easier navigation 
+
+NOTE: be sure to keep this updated as your project grows
+1. FONT FACE
+2. FONT STACKS 
+3. PARAGRAPH DEFAULTS 
+4. H1, H2, H3, H4, H5 STYLES   
+5. TEXT UTILITY CLASSES
+6. ACCESSIBILITY
+
 ******************************************************************/
 
 /* =======================================================================
-FONT FACE (IN YOUR FACE)   
+1. FONT FACE (IN YOUR FACE)   
  To embed your own fonts, use this syntax and place your fonts inside
  the css/fonts folder. 
 
@@ -30,13 +44,12 @@ FONT FACE (IN YOUR FACE)
 
 
 
-/*
+/* =======================================================================
+2. FONT STACKS
 The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
-*/
-
-
+========================================================================== */
 // font stacks
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
@@ -47,10 +60,13 @@ $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 */
 $lato:              'Lato', $sans-serif;
 
-/*
+
+
+/* =======================================================================
+3. PARAGRAPH DEFAULTS 
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
-*/
+========================================================================== */
 p {
   -ms-word-break: break-all;
   -ms-word-wrap: break-all;
@@ -74,7 +90,7 @@ p {
 
 
 /* =======================================================================
-H1, H2, H3, H4, H5 STYLES   
+4. H1, H2, H3, H4, H5 STYLES   
 ========================================================================== */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
@@ -120,7 +136,7 @@ h5, .h5 {
 
 
 /* =======================================================================
-  Text classes 
+5. TEXT UTILITY CLASSES
 ========================================================================== */
 /* Case ============================== */
 .text-upper{text-transform:uppercase;}
@@ -134,8 +150,10 @@ h5, .h5 {
 .text-right{text-align:right;}
 
 
+/* =======================================================================
+6. ACCESSIBILITY
+========================================================================== */
 
-/* Accessibility ============================== */
 /* Text meant only for screen readers */
 .text-screen-reader {
   clip: rect(1px, 1px, 1px, 1px);

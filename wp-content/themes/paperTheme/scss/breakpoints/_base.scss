@@ -12,18 +12,21 @@ and will be used across all viewports.
 
 
 TABLE OF CONTENTS 
-be sure to keep this updated as your project grows
-1. General 
-2. Link 
-3. Wordpress Body Classes (pages)
-4. Header 
-5. Navigation 
-6. Wordpress Menu Nav (imported partial)
-7. Wordpress Main Nav (imported partial)
-8. Wordpress Page Nav (imported partial)
-9. Wordpress Posts and Content (imported module)
-10.Wordpress Sidebars and Widgets (imported module)
-11.Footer Styles
+keep these consistent with your css comment header
+this way you can copy and search for easier navigation 
+
+NOTE: be sure to keep this updated as your project grows
+1. GENERAL STYLES   
+2. LINK STYLES   
+3. WORDPRESS BODY CLASSES (pages)
+4. HEADER STYLES   
+5. NAVIGATION  
+6. WORDPRESS MENU NAV STYLES  
+7. WORDPRESS MAIN NAV STYLES  (GLOBAL NAV)
+8. WORDPRESS PAGE NAV STYLES   
+9. WORDPRESS POSTS & CONTENT BASE STYLES 
+10. WORDPRESS SIDEBARS AND WIDGETS
+11. FOOTER STYLES 
 ******************************************************************/
 
 
@@ -80,7 +83,7 @@ a, a:visited {
 
 
 /* =======================================================================
- 3. WP BODY CLASSES (pages)
+ 3. WORDPRESS BODY CLASSES (pages)
  Keep in mind these only apply to the < 480px 
 ========================================================================== */
 @import "partials/wp_body_classes";

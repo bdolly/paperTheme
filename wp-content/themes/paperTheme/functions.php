@@ -38,6 +38,14 @@ function _paperTheme_setup() {
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 	) );
 
+	/*
+	 * Enable support for Post Formats.
+	 * See http://codex.wordpress.org/Post_Formats
+	 */
+	add_theme_support( 'post-formats', array(
+		'aside', 'image', 'video', 'quote', 'link',
+	) );
+
 	
 }
 endif; // _paperTheme_setup
@@ -81,6 +89,9 @@ function _paperTheme_scripts() {
 		//adding scripts file in the footer
 		wp_register_script( '_paperTheme-custom-js', get_stylesheet_directory_uri() . '/js/_paperTheme.js', array( 'jquery' ), '', true );
 
+		//courtesy of _s underscores.me theme
+		wp_register_script( '_paperTheme-foucs-fix-js', get_stylesheet_directory_uri() . '/js/fix-link-focus-fix.js', array( 'jquery' ), '', true );
+
 		// enqueue styles and scripts
 		wp_enqueue_script( '_paperTheme-modernizr' );
 		wp_enqueue_style( '_paperTheme-stylesheet' );
@@ -96,6 +107,10 @@ function _paperTheme_scripts() {
 
 		// enqueue custom.js after Jquery in the footer
 		wp_enqueue_script( '_paperTheme-custom-js' );
+		
+		// this gets concatenated into _paperTheme-custom-js
+		// during the production theme build
+		wp_enqueue_script( '_paperTheme-focus-fix-js' );
 
 	}
 
