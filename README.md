@@ -17,7 +17,7 @@ paperTheme itself is meant to be used as an uncompressed developement theme with
 This workflow assumes a basic knowledge of the terminal, GIT, WP installation, Node.js, and Grunt.js 
 
 1. git clone where you want the WP install to be 
-2. ```$ git add remote upstream https://github.com/WordPress/WordPress.git ```<br>
+2. ```$ git remote add upstream https://github.com/WordPress/WordPress.git ```<br>
    This makes sure you have an upstream branch to the WordPress repo to pull new version changes or be able to roll back 
 3. Setup remote tracking branches to your repo. NOTE:Please submit changes to paperTheme repo as pull request   
 4. install WP
