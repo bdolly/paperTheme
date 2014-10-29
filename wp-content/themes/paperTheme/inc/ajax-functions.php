@@ -16,9 +16,9 @@ add_action( 'wp_ajax_lazyLoad_request', 'lazyLoad_request' );
     $post_type       = $_POST['post_type'];
     $paged           = $_POST['page_no'];
     $posts_per_page  = $_POST['posts_per'];
-    $cat_name        = $_POST['cat_name'] ? '"'.$_POST['cat_name'].'"': '';
-    $tag_name        = $_POST['tag_name'] ? '"'.$_POST['tag_name'].'"': '';
-    $search_term     = $_POST['search_term'] ? '"'.$_POST['search_term'].'"': '';
+    $cat_name        = $_POST['cat_name'] ? '"'.$_POST['cat_name'].'"': null;
+    $tag_name        = $_POST['tag_name'] ? '"'.$_POST['tag_name'].'"': null;
+    $search_term     = $_POST['search_term'] ? '"'.$_POST['search_term'].'"': null;
     $post_content_type = ($post_type !== "post") ? $post_type : null;
     
 
